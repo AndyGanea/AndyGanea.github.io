@@ -30,12 +30,20 @@ document.getElementById('buttons').addEventListener('click', function(event) {
   } else if (value === 'x2') {
     operand1 = Math.pow(parseFloat(operand1), 2);
     display.value = operand1;
+  } else if (value === '10x') {
+    operand1 = Math.pow(10, parseFloat(operand1));
+    display.value = operand1;
   } else if (value === 'sqrt') {
     operand1 = Math.sqrt(parseFloat(operand1));
     display.value = operand1;
   } else if (value === '+/-') {
-    operand1 = parseFloat(operand1) * -1;
-    display.value = operand1;
+    if (operator) {
+      operand2 = (-parseFloat(operand2)).toString();
+      display.value = operand2;
+    } else {
+      operand1 = (-parseFloat(operand1)).toString();
+      display.value = operand1;
+    }
   } else if (value === 'sin') {
     operand1 = Math.sin(parseFloat(operand1));
     display.value = operand1;
@@ -51,7 +59,7 @@ document.getElementById('buttons').addEventListener('click', function(event) {
   } else if (value === 'exp') {
     operand1 = Math.exp(parseFloat(operand1));
     display.value = operand1;
-  } else if (value === 'abs') {
+  } else if (value === '|x|') {
     operand1 = Math.abs(parseFloat(operand1));
     display.value = operand1;
   } else if (value === 'ceil') {
