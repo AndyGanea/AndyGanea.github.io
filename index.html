@@ -7,74 +7,44 @@
   <div class="calculator">
     <input type="text" id="display" readonly>
     <table id="buttons">
-        <tr>
-            <td><button class="operation">MC</button></td>
-            <td><button class="operation">MR</button></td>
-            <td><button class="operation">MS</button></td>
-            <td><button class="operation">M+</button></td>
-            <td><button class="operation">M-</button></td>
-          </tr>
-        <tr>
-            <td><button class="operation">asin</button></td>
-            <td><button class="operation">acos</button></td>
-            <td><button class="operation">atan</button></td>
-            <td><button class="operation">sinh</button></td>
-            <td><button class="operation">cosh</button></td>
-        </tr>
-        <tr>
-            <td><button class="operation">tanh</button></td>
-            <td><button class="operation">asinh</button></td>
-            <td><button class="operation">acosh</button></td>
-            <td><button class="operation">atanh</button></td>
-            <td><button class="operation">log10</button></td>
-        </tr>
-        <tr>
-            <td><button class="operation">ln</button></td>
-            <td><button class="operation">trunc</button></td>
-            <td><button class="operation">sin</button></td>
-            <td><button class="operation">cos</button></td>
-            <td><button class="operation">tan</button></td>
-        </tr>
-        <tr>
-            <td><button class="operation">log</button></td>
-            <td><button class="operation">exp</button></td>
-            <td><button class="operation">|x|</button></td>
-            <td><button class="operation">ceil</button></td>
-            <td><button class="operation">floor</button></td>
-        </tr>
       <tr>
-        <td><button class="operation">1/x</button></td>
-        <td><button class="operation">x<sup>2</sup></button></td>
-        <td><button class="operation">sqrt</button></td>
-        <td><button class="operation">+/-</button></td>
-        <td><button class="operation">10<sup>x</sup></button></td>
+        <td><button class="operation" data-value="MC">MC</button></td>
+        <td><button class="operation" data-value="MR">MR</button></td>
+        <td><button class="operation" data-value="MS">MS</button></td>
+        <td><button class="operation" data-value="M+">M+</button></td>
+        <td><button class="operation" data-value="M-">M-</button></td>
       </tr>
       <tr>
-        <td><button class="number">7</button></td>
-        <td><button class="number">8</button></td>
-        <td><button class="number">9</button></td>
-        <td><button class="operation">/</button></td>
+        <td><button class="operation" data-value="/">/</button></td>
+        <td><button class="operation" data-value="sqrt">sqrt</button></td>
+        <td><button class="operation" data-value="x2">x2</button></td>
+        <td><button class="operation" data-value="1/x">1/x</button></td>
+        <td><button class="operation" data-value="C">C</button></td>
       </tr>
       <tr>
-        <td><button class="number">4</button></td>
-        <td><button class="number">5</button></td>
-        <td><button class="number">6</button></td>
-        <td><button class="operation">*</button></td>
+        <td><button class="number" data-value="7">7</button></td>
+        <td><button class="number" data-value="8">8</button></td>
+        <td><button class="number" data-value="9">9</button></td>
+        <td><button class="operation" data-value="*">*</button></td>
+        <td><button class="operation" data-value="%">%</button></td>
       </tr>
       <tr>
-        <td><button class="number">1</button></td>
-        <td><button class="number">2</button></td>
-        <td><button class="number">3</button></td>
-        <td><button class="operation">-</button></td>
+        <td><button class="number" data-value="4">4</button></td>
+        <td><button class="number" data-value="5">5</button></td>
+        <td><button class="number" data-value="6">6</button></td>
+        <td><button class="operation" data-value="-">-</button></td>
+        <td><button class="operation" data-value="+/-">+/-</button></td>
       </tr>
       <tr>
-        <td><button class="number">0</button></td>
-        <td><button class="number">.</button></td>
-        <td><button class="operation">=</button></td>
-        <td><button class="operation">+</button></td>
+        <td><button class="number" data-value="1">1</button></td>
+        <td><button class="number" data-value="2">2</button></td>
+        <td><button class="number" data-value="3">3</button></td>
+        <td><button class="operation" data-value="+">+</button></td>
+        <td><button class="operation" data-value="=">=</button></td>
       </tr>
       <tr>
-        <td colspan="4"><button id="clear">C</button></td>
+        <td><button class="number" data-value="0">0</button></td>
+        <td><button class="operation" data-value=".">.</button></td>
       </tr>
     </table>
   </div>

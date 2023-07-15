@@ -1,10 +1,12 @@
+
 const display = document.getElementById('display');
 let operand1 = '';
 let operand2 = '';
 let operator = null;
+let memory = 0;
 
 document.getElementById('buttons').addEventListener('click', function(event) {
-  const value = event.target.innerText;
+  const value = event.target.dataset.value;
 
   if (!isNaN(value) || value === '.') {
     if (operator) {
